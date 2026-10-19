@@ -32,7 +32,8 @@ def download_pixabay_assets():
             f.write(v_data)
         video_files.append(v_name)
         
-    audio_url = f"https://pixabay.com{api_key}&q=nature+relaxing&per_page=5"
+        audio_url = f"https://pixabay.com{api_key}&q=nature+relaxing&per_page=5"
+    
     audio_data = requests.get(audio_url).json()
     audio_hits = audio_data.get('hits', [])
     
