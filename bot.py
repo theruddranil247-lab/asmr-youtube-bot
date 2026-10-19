@@ -9,7 +9,7 @@ from moviepy.editor import VideoFileClip, concatenate_videoclips, AudioFileClip
 # ১. পিক্সাবে থেকে ফ্রি ভিডিও ও সাউন্ড খোঁজা এবং ডাউনলোড করা
 def download_pixabay_assets():
     api_key = os.environ.get('PIXABAY_API_KEY')
-    video_keywords = ['satisfying', 'asmr slime', 'soap cutting', 'sand cutting']
+        video_keywords = ['satisfying', 'asmr+slime', 'soap+cutting', 'sand+cutting']
     keyword = random.choice(video_keywords)
     video_url = f"https://pixabay.com{api_key}&q={keyword}&per_page=10"
     
